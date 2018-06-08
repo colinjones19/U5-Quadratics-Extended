@@ -1,0 +1,54 @@
+﻿<Window x:Class="U5_Quadratic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:U5_Quadratic"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="680" Width="680">
+    <Grid>
+        <StackPanel x:Name="panel_Input">
+
+
+            <Line Margin="0,10"/>
+            <Line Margin="0,10"/>
+            <TextBox x:Name="AValue" Text="Enter A value here" HorizontalAlignment="Center" />                  
+            <TextBox x:Name="BValue" Text="Enter B value here" HorizontalAlignment="Center"/>           
+            <TextBox x:Name="CValue" Text="Enter C value here" HorizontalAlignment="Center" />
+            <Button x:Name="Click" Content="Calculate" Width="200" Click="Click_Calc"/>
+            <TextBlock x:Name="output" Text="" HorizontalAlignment="Center"/>
+            
+
+            <Button x:Name="btn_Graph" Content="Graph it" Width="200" Click="Click_Graph" Visibility="Hidden"/>
+        </StackPanel>
+
+        <Canvas x:Name="canvas_Graph" Margin="157,381,157,0" Visibility="Hidden">
+            <Line x:Name="X_axis" StrokeThickness="5" X2="356" Y1="135" Y2="135" Stroke="Black" Opacity="0.5"/>
+            <Line x:Name="Y_axis" StrokeThickness="5" X1="180" X2="180" Y1="270" Y2="0" Stroke="Black" Opacity="0.5"/>
+            <Label x:Name="X_Label" Content="X" Canvas.Left="361" Canvas.Top="112" />
+            <Label x:Name="Y_Label" Content="Y" Canvas.Left="182" Canvas.Top="-18" />
+
+            <Label x:Name="X_Neg9" Content="-9" Canvas.Left="-3" Canvas.Top="138" />
+            <Label x:Name="X_Neg8" Content="-8" Canvas.Left="17" Canvas.Top="138" />
+            <Label x:Name="X_Neg7" Content="-7" Canvas.Left="37" Canvas.Top="138" />
+            <Label x:Name="X_Neg6" Content="-6" Canvas.Left="57" Canvas.Top="138" />
+            <Label x:Name="X_Neg5" Content="-5" Canvas.Left="77" Canvas.Top="138" />
+            <Label x:Name="X_Neg4" Content="-4" Canvas.Left="97" Canvas.Top="138" />
+            <Label x:Name="X_Neg3" Content="-3" Canvas.Left="117" Canvas.Top="138" />
+            <Label x:Name="X_Neg2" Content="-2" Canvas.Left="137" Canvas.Top="138" />
+            <Label x:Name="X_Neg1" Content="-1" Canvas.Left="157" Canvas.Top="138" />
+            <Label x:Name="X_0" Content="0" Canvas.Left="172" Canvas.Top="138" />
+            <Label x:Name="X_1" Content="1" Canvas.Left="187" Canvas.Top="138" />
+            <Label x:Name="X_2" Content="2" Canvas.Left="207" Canvas.Top="138" />
+            <Label x:Name="X_3" Content="3" Canvas.Left="227" Canvas.Top="138" />
+            <Label x:Name="X_4" Content="4" Canvas.Left="247" Canvas.Top="138" />
+            <Label x:Name="X_5" Content="5" Canvas.Left="267" Canvas.Top="138" />
+            <Label x:Name="X_6" Content="6" Canvas.Left="287" Canvas.Top="138" />
+            <Label x:Name="X_7" Content="7" Canvas.Left="307" Canvas.Top="138" />
+            <Label x:Name="X_8" Content="8" Canvas.Left="327" Canvas.Top="138" />
+            <Label x:Name="X_9" Content="9" Canvas.Left="347" Canvas.Top="138" />
+
+
+        </Canvas>
+    </Grid>
+</Window>
